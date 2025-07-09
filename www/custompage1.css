@@ -1,0 +1,304 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* ==== Overview - Umum ==== */
+h2 {
+  font-weight: bold;
+  color: #2b2b2b;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ==== YouTube Video Centered ==== */
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ==== Galeri Gambar Satelit ==== */
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.gallery-image {
+  flex: 1 1 calc(33.333% - 20px);
+  text-align: center;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-image img:hover {
+  transform: scale(1.03);
+}
+
+.gallery-image p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-style: italic;
+  color: #555;
+}
+
+/* ==== Quote Styling ==== */
+.quote-box {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #2b2b2b;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-left: 4px solid #4CAF50;
+  background-color: #f9f9f9;
+  display: inline-block;
+}
+
+
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f7f7f7;
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #ffffff;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 0;
+  padding: 12px 30px;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2c3e50 !important;
+}
+
+.navbar-nav > li > a {
+  font-weight: 500;
+  color: #2c3e50 !important;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  transition: 0.2s;
+}
+
+.navbar-nav > li > a:hover {
+  color: #3f51b5 !important;
+}
+
+/* Header */
+h1, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+/* Panel (wellPanel) */
+.well {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+/* Checkbox and Inputs */
+.checkbox-inline {
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.checkbox-inline input {
+  margin-right: 5px;
+  transform: scale(1.1);
+}
+
+select.form-control {
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Plot Outputs */
+.shiny-plot-output {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+/* DataTable */
+table.dataTable thead th {
+  background-color: #b5b13f8b;
+  color: white;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+table.dataTable tbody td {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+/* Button Styles */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.btn-primary:hover {
+  background-color: #303f9f;
+}
+
+/* === GENERAL STYLING === */
+body, .navbar, .tab-content {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf8f4;
+  color: #2b2b2b;
+}
+
+.navbar-default {
+  background-color: #faf3eb;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #555;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a {
+  background-color: #f4e4d7;
+  color: #000;
+}
+
+/* === PANEL STYLING === */
+.well, .panel, .well-panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* === TITLES & TEXT === */
+h4, h3, h2 {
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+/* === CHARTS === */
+.plot-output, .leaflet-output {
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background-color: white;
+}
+
+/* === SELECT INPUT === */
+select.form-control {
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  background-color: #fffaf6;
+}
+
+/* === LEGEND / LABELS === */
+.leaflet-control {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 13px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 6px 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* === MAPS === */
+.leaflet-container {
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ==== Styling untuk quote box ==== */
+/* Quote box styled and fully centered */
+.quote-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.quote-box {
+  text-align: center;
+  font-size: 18px;
+  font-style: italic;
+  color: #2b2b2b;
+  padding: 20px 30px;
+  background-color: #f9f9f9;
+  border-left: 4px solid #4CAF50;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+
+/* ==== Responsive image (tim) ==== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
