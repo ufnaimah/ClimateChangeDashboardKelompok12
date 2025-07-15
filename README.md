@@ -1,38 +1,76 @@
 # 🌏 Climate Change Dashboard - Kelompok 12
 
-**Dashboard Perubahan Iklim: Analisis Emisi Berdasarkan Sektor di Indonesia**
+**Dashboard Interaktif Emisi Gas Rumah Kaca (GRK) di Indonesia berdasarkan Sektor dan Provinsi**
 
-Dashboard ini dikembangkan oleh Kelompok 12 (Nur Na’imah Ma’ruf, Nuzul Athaillah, Rifa Fairuz) dalam rangka proyek mata kuliah **Komputasi Statistik** di Politeknik Statistika STIS.
-
-Dashboard ini menyajikan data emisi gas rumah kaca (GRK) di Indonesia berdasarkan sektor dan provinsi, serta menyediakan fitur analisis inferensia regresi untuk eksplorasi mendalam.
+Dashboard ini dikembangkan dalam rangka tugas akhir mata kuliah **Komputasi Statistik** oleh mahasiswa Politeknik Statistika STIS. Aplikasi ini menyajikan informasi visual dan analisis statistik terkait emisi GRK nasional.
 
 ---
 
 ## 🔗 Tautan Penting
 
-- 📊 **Akses Dashboard**:  
+- 📊 **Akses Dashboard (shinyapps.io)**  
   [https://ufnaimah.shinyapps.io/ClimateChangeDashboard_Kelompok12](https://ufnaimah.shinyapps.io/ClimateChangeDashboard_Kelompok12)
 
-- 📄 **Proposal Proyek**:  
-  [Link Proposal Google Drive](https://drive.google.com/...) *(ganti dengan link proposalmu)*
+- 📄 **Proposal Proyek**  
+  [Link Proposal](https://drive.google.com/drive/folders/1_-xC9ZlX7lSLX7i9R6yrXEK7-WlrftyT?usp=sharing)
 
-- ▶️ **Video Tutorial Penggunaan**:  
-  [Tonton di YouTube](https://youtu.be/DDpdxGWcOVg)
+- ▶️ **Video Tutorial Penggunaan Dashboard**  
+  [Tonton Video di YouTube](https://youtu.be/DDpdxGWcOVg)
 
-- 📄 **Panduan PDF (User Guide)**  
-  Tersedia tombol unduhan di dalam dashboard bagian *Tata Cara Penggunaan*
+- 📘 **Panduan Penggunaan (PDF)**  
+  [Link Panduan Penggunaan](https://drive.google.com/drive/folders/1_-xC9ZlX7lSLX7i9R6yrXEK7-WlrftyT?usp=sharing)
 
 ---
 
-## 📌 Fitur Dashboard
+## 📌 Fitur Utama
 
-- **Overview**: Gambaran umum emisi global dan Asia Tenggara
-- **Emisi Provinsi**: Peta, tren, dan peringkat emisi di tiap provinsi
-- **Emisi Sektor**: Top 3 sektor penyumbang emisi dan proporsinya
-- **Inferensia Statistik**: Uji asumsi dan model regresi suhu vs emisi
-- **Metadata**: Penjelasan sumber dan struktur data
+- **Overview Global & ASEAN**: Perbandingan emisi Indonesia dengan negara-negara ASEAN
+- **Provinsi**: 
+  - Top 3 provinsi emisi tertinggi
+  - Tren emisi per provinsi
+  - Peta choropleth berdasarkan total emisi per tahun
+- **Sektor**:
+  - Top 3 sektor penyumbang emisi
+  - Distribusi emisi tiap sektor dalam pie chart
+- **Inferensia Statistik**:
+  - Uji asumsi regresi
+  - Perbandingan model linier dan log-lin
+- **Metadata**: Penjelasan sumber data
 - **Tentang Kami**: Informasi tim pengembang
 
+---
+
+## 🗂️ Struktur Folder
+<pre> Projek RShiny-FInal/
+│
+├── appPage012345.R # File utama dashboard R Shiny
+├── README.md # Dokumentasi proyek
+├── .gitignore # Daftar file/folder yang diabaikan Git
+│
+├── www/ # Folder untuk file statis
+│ ├── Panduan_Climate_Change_Dashboard.pdf # File panduan PDF
+│ ├── custompage1.css # File CSS kustom
+│ ├── anggota1.jpg
+│ ├── anggota2.jpg
+│ ├── anggota3.jpg
+│ ├── foto_kelompok.jpg
+│ ├── background.jpg
+| ├── Data Regresi.xlsx
+| ├── Emisi Gas Rumah Kaca Menurut Sektor di Indonesia 2000-2023.xlsx
+│ ├── Emisi Perkapita Negara Asia Tenggara.xlsx
+│ ├── Emisi Tahunan Global, Asia, dan Indonesia.xlsx
+│ ├── Suhu Rata-rata Permukaan Global, Asia, dan Indonesia.xlsx
+│ ├── Tren Emisi Per Provinsi 2000-2023.xlsx
+│ └── gadm41_IDN_1.json 
+│
+├── data/ # Folder data
+| ├── Emisi Gas Rumah Kaca Menurut Sektor di Indonesia 2000-2023.xlsx
+│ ├── Emisi Perkapita Negara Asia Tenggara.xlsx
+│ ├── Emisi Tahunan Global, Asia, dan Indonesia.xlsx
+│ ├── Suhu Rata-rata Permukaan Global, Asia, dan Indonesia.xlsx
+│ ├── Tren Emisi Per Provinsi 2000-2023.xlsx
+│ └── gadm41_IDN_1.json  
+└── rsconnect </pre>
 ---
 
 ## 📦 Package yang Digunakan
@@ -42,37 +80,27 @@ Dashboard ini menyajikan data emisi gas rumah kaca (GRK) di Indonesia berdasarka
 | **shiny**         | Framework utama dashboard interaktif |
 | **leaflet**       | Visualisasi peta choropleth |
 | **ggplot2**       | Grafik tren dan distribusi |
-| **plotly**        | Visualisasi interaktif (opsional) |
+| **plotly**        | Visualisasi interaktif |
 | **readxl / readr**| Membaca file Excel dan CSV |
-| **dplyr / tidyr** | Manipulasi data |
+| **dplyr / tidyr** | Manipulasi dan transformasi data |
 | **forcats**       | Mengatur urutan kategori (faktor) |
-| **scales**        | Format angka di grafik |
+| **scales**        | Format label angka dan sumbu |
 | **lmtest / car / MASS / sandwich** | Uji asumsi dan regresi |
-| **sf**            | Data spasial (GeoJSON) |
-| **corrplot**      | Korelasi variabel |
+| **sf**            | Baca dan olah data spasial (GeoJSON) |
 | **DT**            | Tabel interaktif |
 | **janitor**       | Pembersihan nama kolom |
-| **stringr / stringi** | Pemrosesan teks dan label |
-| **shinyjs**       | Kontrol JavaScript (opsional interaktif) |
+| **stringr / stringi** | Pemrosesan string |
+| **shinyjs**       | Tambahan interaktivitas di UI |
+| **corrplot**      | Visualisasi matriks korelasi |
 
 ---
 
-## 🗂️ Struktur Folder
-Projek RShiny/
-│
-├── app.R # File utama dashboard
-├── www/
-│ ├── Panduan_Climate_Change_Dashboard.pdf
-│ └── custom CSS / assets lainnya
-├── data/
-│ ├── [File Excel dan CSV]
-│ └── [GeoJSON]
-├── README.md
-├── .gitignore
+## 👩‍💻 Tim Pengembang
+<pre>
+ - Nur Na’imah Ma’ruf
+ - Nuzul Athaillah
+ - Rifa Fairuz
+</pre>
 
-👩‍💻 Tim Pengembang
-Nur Na’imah Ma’ruf
-Nuzul Athaillah
-Rifa Fairuz
+## Politeknik Statistika STIS – 2025
 
-Politeknik Statistika STIS - 2025
