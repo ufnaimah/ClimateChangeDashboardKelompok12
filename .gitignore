@@ -1,0 +1,9 @@
+# Abaikan file besar dan file tidak penting
+*.mp4
+*.pdf
+data/
+Panduan_Climate_Change_Dashboard.pdf
+Tutorial Video Panduan.mp4
+.Rproj.user/
+.Rhistory
+.RData
