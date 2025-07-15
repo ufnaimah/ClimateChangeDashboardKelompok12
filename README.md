@@ -18,7 +18,7 @@ Dashboard ini dikembangkan dalam rangka tugas akhir mata kuliah **Komputasi Stat
   [Tonton Video di YouTube](https://youtu.be/DDpdxGWcOVg)
 
 - 📘 **Panduan Penggunaan (PDF)**  
-  [Link Panduan Penggunaan](https://drive.google.com/drive/folders/1_-xC9ZlX7lSLX7i9R6yrXEK7-WlrftyT?usp=sharing)
+  [Link Panduan Penggunaan](https://drive.google.com/drive/folders/1lVEpiYPKsZmZPD4Rx0_ZKv1jEITrz9Gh?usp=sharing)
 
 ---
 
