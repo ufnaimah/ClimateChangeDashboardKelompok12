@@ -102,5 +102,5 @@ Dashboard ini dikembangkan dalam rangka tugas akhir mata kuliah **Komputasi Stat
  - Rifa Fairuz
 </pre>
 
-## Politeknik Statistika STIS – 2025
+#### Politeknik Statistika STIS – 2025
 
