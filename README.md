@@ -9,7 +9,7 @@ Dashboard ini dikembangkan dalam rangka tugas akhir mata kuliah **Komputasi Stat
 ## 🔗 Tautan Penting
 
 - 📊 **Akses Dashboard (shinyapps.io)**  
-  [https://ufnaimah.shinyapps.io/ClimateChangeDashboard_Kelompok12](https://ufnaimah.shinyapps.io/ClimateChangeDashboard_Kelompok12)
+  [https://ufnaimah.shinyapps.io/ClimateChangeDashboard_Kelompok12](https://kmfotw-nur-na0imah0ma0ruf.shinyapps.io/ClimateChangeDashboard_Kelompok12/)
 
 - 📄 **Proposal Proyek**  
   [Link Proposal](https://drive.google.com/drive/folders/1_-xC9ZlX7lSLX7i9R6yrXEK7-WlrftyT?usp=sharing)
